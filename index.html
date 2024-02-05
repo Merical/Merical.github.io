@@ -271,7 +271,33 @@
             <p style="text-align: justify;">We developed an open-source Intelligent mobile platform with mecanum wheels. This platform is equipped with a RGB-D camera, a 2D LiDAR, IMU, odometry, etc. Features like Gazebo simulation, 2D SLAM, Visual SLAM, object tracking, navigation, and autonomous driving are available in this package.</p>
         </td>
         </tr>
-					
+
+        <tr onmouseout="avatar_stop()" onmouseover="avatar_start()"  bgcolor="#ffffd0">
+        <td style="padding:20px;width:25%;vertical-align:top;">
+            <div class="one">
+            <div class="two" id='avatar_image'><video  width="160" muted autoplay loop>
+            <source src="images/avatar.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video></div>
+            <img src='images/avatar.png' width="160">
+            </div>
+            <script type="text/javascript">
+            function avatar_start() {
+                document.getElementById('avatar_image').style.opacity = "1";
+            }
+
+            function avatar_stop() {
+                document.getElementById('avatar_image').style.opacity = "0";
+            }
+            avatar_stop()
+            </script>
+        </td>
+        <td style="padding:20px;width:75%;vertical-align:top">
+            <papertitle>Animatable Avatar</papertitle>
+            <p style="text-align: justify;">During my internship at MiniMax, I helped establish a pipeline for creating animatable avatars driven by facial keypoints. Since this project is licensed, a new version will be coming soon.</p>
+        </td>
+        </tr>	
+
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>
