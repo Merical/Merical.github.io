@@ -22,13 +22,13 @@
                 <name>Chenghao (Shenghao) Li</name>
               </p>
               <p style="text-align: justify;">
-                My name is Chenghao Li, and I often use the name Shenghao Li in my publications. I just graduated with a Ph.D. from Shanghai Jiao Tong University (<a href="https://www.sjtu.edu.cn/">SJTU</a>), where I work on 3D Vision, Local Feature Learning, and Scene Representation and Understanding. I was advised by <a href="https://automation.sjtu.edu.cn/Qun-Fei">Prof. Qunfei Zhao</a>. I am actively seeking opportunities as a postdoc fellow or a research scientist/engineer.
+                My name is Chenghao Li, and I often use the name Shenghao Li in my publications. I just graduated with a Ph.D. from Shanghai Jiao Tong University (<a href="https://www.sjtu.edu.cn/">SJTU</a>), where I work on 3D Vision, Local Feature Learning, and Scene Representation and Understanding. I was advised by <a href="https://automation.sjtu.edu.cn/Qun-Fei">Prof. Qunfei Zhao</a>. From 2021 to 2023, I was very fortunate to work with <a href="https://yan-junjie.github.io/">Dr. Junjie Yan</a> and <a href="https://www.cs.toronto.edu/~byang/">Dr. Bin Yang</a> on 3D animatable avatar and text-to-image generative model. 
               </p>
               <p style="text-align: justify;">
                 I did my MS and BS in Mechatronics at the Intelligent Robot Lab, part of the <a href="https://mech.ecust.edu.cn/main.htm">School of Mechanical and Power Engineering</a> at <a href="https://www.ecust.edu.cn/">ECUST</a>. My adviser was <a href="https://mech.ecust.edu.cn/2019/0516/c11227a90188/page.htm">Prof. Shuang Liu</a>, and I worked on several projects in computer vision and robotics, including VSLAM, object detection, object tracking, etc.
               </p>
               <p style="text-align: justify;">
-                From 2021 to 2023, I worked as an intern at <a href="https://api.minimax.chat/">MiniMax</a> in the avatar group. I primarily designed computer vision algorithms for 3D animatable avatars and 2D generative characters. I also worked on AIGC with large vision-language models. Additionally, I interned at <a href="https://www.qualcomm.com/home">Qualcomm</a> as an AI engineer for mobile computing and at <a href="http://www.oceanring.cn/">Oceanbotech</a> as a robotic vision engineer. 
+                 I participated in multiple internships throughout my Ph.D. and MS. I was an intern at <a href="https://api.minimax.chat/">MiniMax</a>, where I worked on computer vision algorithms for 3D animatable avatars and large vision-language models for text-to-image generation. Additionally, I interned at <a href="https://www.qualcomm.com/home">Qualcomm</a> as an AI engineer for mobile computing and at <a href="http://www.oceanring.cn/">Oceanbotech</a> as a robotic vision engineer. 
               </p>
               <p style="text-align: justify;">
                 Please feel free to email me to discuss computer vision, robotics, AGI, etc.
@@ -55,6 +55,7 @@
               <heading>News</heading>
               <p style="text-align: justify;">
               <ul>
+                <li>I am actively seeking opportunities as a postdoc fellow or a research scientist/engineer.</li>
                 <li>I graduated from Shanghai Jiao Tong University with a Ph.D. in Automation in December 2023.</li>
                 <li>I was awarded Weichai Power Scholarship at Shanghai Jiao Tong University in 2023.</li>
               </ul>
@@ -266,9 +267,9 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
             <td style="padding:10px;width:100%;vertical-align:middle">
-              <heading>Open-source Projects</heading>
+              <heading>Selected Projects</heading>
               <p style="text-align: justify;">
-                Here are my open-source projects on GitHub. More code of published paper will be available soon.
+                Here are some of my research and industrial projects. More open-source code will be available soon on Github.
               </p>
             </td>
           </tr>
@@ -286,6 +287,32 @@
             <p style="text-align: justify;">We developed an open-source Intelligent mobile platform with mecanum wheels. This platform is equipped with a RGB-D camera, a 2D LiDAR, IMU, odometry, etc. Features like Gazebo simulation, 2D SLAM, Visual SLAM, object tracking, navigation, and autonomous driving are available in this package.</p>
         </td>
         </tr>
+
+        <tr onmouseout="grab_stop()" onmouseover="grab_start()">
+        <td style="padding:10px;width:25%;vertical-align:top;">
+            <div class="one">
+            <div class="two" id='grab_image'><video  width="160" muted autoplay loop>
+            <source src="images/multitruss_grab.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video></div>
+            <img src='images/multitruss_grab.png' width="160">
+            </div>
+            <script type="text/javascript">
+            function grab_start() {
+                document.getElementById('grab_image').style.opacity = "1";
+            }
+
+            function grab_stop() {
+                document.getElementById('grab_image').style.opacity = "0";
+            }
+            grab_stop()
+            </script>
+        </td>
+        <td style="padding:10px;width:75%;vertical-align:top">
+            <papertitle>Vision-based Multi-truss Workpiece Grabbing</papertitle>
+            <p style="text-align: justify;">We developed a vision-based workpiece grabbing algorithm with a line-scan camera and a multi-truss system for industrial deployment.</p>
+        </td>
+        </tr>	
 
         <tr onmouseout="avatar_stop()" onmouseover="avatar_start()">
         <td style="padding:10px;width:25%;vertical-align:top;">
@@ -319,7 +346,7 @@
             <td style="padding:0px">
               <br>
               <p style="text-align:right;font-size:small;">
-                 Stolen from <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron</a>.
+                 The templet of this page is from <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron</a>.
               </p>
             </td>
           </tr>
